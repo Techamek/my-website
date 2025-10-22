@@ -6,7 +6,19 @@
   <title>About | David Austin</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    main { padding-top: 6rem; padding-bottom: 6rem; }
+    main {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    .profile-img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .profile-img:hover {
+      transform: scale(1.03);
+    }
   </style>
 </head>
 <body class="bg-light text-dark">
@@ -32,13 +44,14 @@
 
 <main class="container">
   <div class="row align-items-center mb-5">
-    <div class="col-md-5 mb-4 mb-md-0">
-      <img src="images/profile.jpg" alt="David Austin" class="img-fluid rounded shadow-sm">
+    <div class="col-md-5 mb-4 mb-md-0 text-center">
+      <!-- 🖼️ Your profile image -->
+      <img src="images/profile.jpg" alt="David Austin" class="profile-img">
     </div>
     <div class="col-md-7">
       <h2>About Me</h2>
       <p class="lead">I’m <strong>David Austin</strong>, a computer science student at Kent State University who enjoys combining art, code, and analytics.</p>
-      <p>When I’m not programming, I’m experimenting in Blender, developing small web games, or analyzing real-world datasets. My goal is to bridge creativity and logic through technology.</p>
+      <p>When I’m not programming, I’m experimenting in Blender, developing interactive p5.js projects, or analyzing real-world datasets in R. My goal is to bridge creativity and logic through technology.</p>
       <p><strong>Skills:</strong> HTML, CSS, JavaScript, Python, R, Blender, Git, Bootstrap</p>
     </div>
   </div>
@@ -54,8 +67,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
